@@ -39,7 +39,6 @@ window.initMap = function () {
 
       const mark = new google.maps.Marker({
         position: {lat, lng},
-        name,
         map: map,
       })
       mark.addListener("click", ()=>{
