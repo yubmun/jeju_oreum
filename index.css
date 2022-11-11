@@ -1,0 +1,15 @@
+.no{
+    display: none;
+    cursor: pointer;
+}
+
+.btn-map {
+    background-color: skyblue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+}

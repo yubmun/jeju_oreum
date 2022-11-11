@@ -5,7 +5,11 @@
 //     .then((r) => r.json())
 //     .then((r) => console.log(r))
 // }
-
+const btnMap = document.querySelector('.btn-map');
+const map = document.querySelector('.no');
+btnMap.addEventListener('click', (e)=>{
+  map.classList.toggle('no');
+})
 
 
 window.initMap = function () {
@@ -17,7 +21,7 @@ window.initMap = function () {
   fetch("https://api.odcloud.kr/api/15096996/v1/uddi:6738a90c-ec96-4245-a187-9528cea62904?page=1&perPage=90&serviceKey=3MCBWEYPV4%2BY4Un8XqdBpFBiaGQKGsEVpC1HIK1DCoHqjNlhaUGcwjBIJGDYeTaTOiG4GKJorKXpGpfNpOEjhQ%3D%3D")
   .then((r) => r.json())
   .then((r) => {
-    // console.log(r.data);
+    console.log(r.data);
     const infowindow = new google.maps.InfoWindow();
 
     r.data.forEach((x) => {
